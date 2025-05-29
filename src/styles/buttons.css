@@ -1,0 +1,96 @@
+/* Estilos globales de botones */
+
+/* Clase base para todos los botones */
+.comic-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 25px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 0;
+  font-weight: bold;
+  transition: all 0.15s ease;
+  border: 3px solid #000;
+  font-size: 1rem;
+  font-family: 'Bangers', 'Comic Sans MS', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 4px 4px 0 #000;
+  transform: skew(-5deg);
+  margin: 5px;
+  text-shadow: none;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+/* Efecto hover */
+.comic-button:hover {
+  transform: skew(-5deg) translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #000;
+  background: #fff;
+  color: #000;
+}
+
+/* Efecto active */
+.comic-button:active {
+  transform: skew(-5deg) translate(2px, 2px);
+  box-shadow: 2px 2px 0 #000;
+}
+
+/* Variantes de color */
+.comic-button.primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.comic-button.secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.comic-button.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.comic-button.light {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Tamaños */
+.comic-button.small {
+  padding: 8px 15px;
+  font-size: 0.85rem;
+  min-width: 120px;
+}
+
+.comic-button.large {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  min-width: 180px;
+}
+
+/* Botón de enlace */
+.comic-button.link {
+  background: none;
+  border: none;
+  box-shadow: none;
+  text-decoration: underline;
+  color: var(--primary-color);
+  padding: 0;
+  min-width: auto;
+}
+
+.comic-button.link:hover {
+  background: none;
+  transform: none;
+  box-shadow: none;
+  text-decoration: none;
+}

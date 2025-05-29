@@ -1,0 +1,275 @@
+.project-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(245,245,245,0.9) 100%);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.project-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 2;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 3px solid #000;
+  background-color: #f5f5f5;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+  background-color: white;
+  padding: 10px;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.03);
+}
+
+.project-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-content h3 {
+  margin: 0 0 10px 0;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: 'Bangers', 'Comic Sans MS', cursive;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+  position: relative;
+  display: inline-block;
+}
+
+.project-content h3::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+.project-content h4 {
+  margin: 10px 0 15px 0;
+  color: #555;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.project-description {
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.project-features {
+  margin-bottom: 15px;
+}
+
+.project-features h4 {
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+  color: #444;
+  font-weight: 600;
+}
+
+.project-features ul {
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+.project-features li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 15px;
+}
+
+.project-features li:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  transform: rotate(45deg);
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: auto 0 15px 0;
+}
+
+.tech-tag {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 25px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 0;
+  font-weight: bold;
+  transition: all 0.15s ease;
+  border: 3px solid #000;
+  font-size: 1rem;
+  font-family: 'Bangers', 'Comic Sans MS', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 4px 4px 0 #000;
+  transform: skew(-5deg);
+  margin: 5px;
+  text-shadow: none;
+  background: #fff;
+  min-width: 140px;
+  position: relative;
+}
+
+.project-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.1) 100%);
+  z-index: -1;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+}
+
+.project-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: -1;
+  transform: translate(3px, 3px);
+  transition: all 0.2s ease;
+  border: 3px solid #000;
+}
+
+.project-link:hover {
+  transform: skew(-5deg) translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #000;
+  background: #fff;
+  color: #000;
+}
+
+.project-link:active {
+  transform: skew(-5deg) translate(2px, 2px);
+  box-shadow: 2px 2px 0 #000;
+}
+
+.project-link:active {
+  transform: skew(-5deg) translate(2px, 2px);
+  box-shadow: 3px 3px 0 rgba(0,0,0,1);
+}
+
+.project-link.demo {
+  background-color: var(--primary-color);
+  border-color: #000;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.project-link.demo:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  filter: brightness(1.1);
+}
+
+.project-link.github {
+  background-color: #000;
+  color: #fff;
+}
+
+.project-link.github:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.project-link svg {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover svg {
+  transform: scale(1.2);
+}
+
+/* Estilos para los iconos */
+.project-link svg {
+  font-size: 1rem;
+}
