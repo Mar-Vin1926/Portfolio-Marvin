@@ -36,7 +36,7 @@ const AboutMe = () => {
             <p className="about-intro">
               <span className="greeting">¡HOLA DE NUEVO! 👋</span>
               <br />
-              Soy <span className="highlight">Marvin</span>, un apasionado desarrollador en formación con un fuerte enfoque en Python y análisis de datos. Actualmente estoy cursando una técnica en Desarrollo de Software y un máster en Python y Power BI para expandir mis habilidades en el mundo del análisis y visualización de datos.
+              Soy <span className="highlight">Marvin</span>, un apasionado desarrollador con un fuerte enfoque en Python y análisis de datos. Actualmente estoy cursando una técnica en Desarrollo de Software y un máster en Python y Power BI para expandir mis habilidades en el mundo del análisis y visualización de datos.
             </p>
             <p className="about-description">
               Mi objetivo es combinar mis conocimientos en programación con el análisis de datos para crear soluciones innovadoras y significativas. Me encanta aprender nuevas tecnologías y enfrentarme a desafíos que me ayuden a crecer profesionalmente.
@@ -50,11 +50,11 @@ const AboutMe = () => {
               <ul className="education-list">
                 <li className="education-item">
                   <strong className="education-title">Técnico en Desarrollo de Software</strong>
-                  <p className="education-institution">Institución Educativa - En curso</p>
+                  <p className="education-institution">Cesde - Terminado</p>
                 </li>
                 <li className="education-item">
                   <strong className="education-title">Máster en Python y Power BI</strong>
-                  <p className="education-institution">Institución Educativa - En curso</p>
+                  <p className="education-institution">Daxus LATAM - En curso</p>
                 </li>
               </ul>
             </div>

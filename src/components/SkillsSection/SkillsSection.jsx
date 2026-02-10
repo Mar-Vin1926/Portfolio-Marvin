@@ -7,9 +7,9 @@ const skills = [
     category: 'LENGUAJES',
     icon: '💻',
     items: [
-      { name: 'Python', level: 70, color: 'var(--comic-blue)' },
+      { name: 'Python', level: 80, color: 'var(--comic-blue)' },
       { name: 'JavaScript', level: 80, color: 'var(--comic-yellow)' },
-      { name: 'Java', level: 60, color: 'var(--comic-red)' },
+      { name: 'Java', level: 75, color: 'var(--comic-red)' },
     ]
   },
   {
@@ -27,7 +27,7 @@ const skills = [
     icon: '🛠️',
     items: [
       { name: 'Git', level: 80, color: 'var(--comic-red)' },
-      { name: 'Power BI', level: 5, color: 'var(--comic-yellow)' },
+      { name: 'Power BI', level: 90, color: 'var(--comic-yellow)' },
       { name: 'SQL', level: 70, color: 'var(--comic-blue)' },
       { name: 'Excel', level: 85, color: 'var(--comic-green)' },
     ]

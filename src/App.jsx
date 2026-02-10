@@ -282,7 +282,7 @@ function App() {
               transition={{ duration: 0.8 }}
             >
               <h1>¡HOLA! SOY <span className="highlight">MARVIN</span></h1>
-              <h2>DESARROLLADOR EN FORMACIÓN</h2>
+              <h2>DESARROLLADOR DE SOFTWARE</h2>
               <p>Apasionado por Python, Análisis de Datos y Desarrollo Web. Transformando ideas en soluciones digitales creativas y funcionales.</p>
               
               <div className="hero-buttons">
