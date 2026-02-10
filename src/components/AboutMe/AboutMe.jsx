@@ -36,7 +36,7 @@ const AboutMe = () => {
             <p className="about-intro">
               <span className="greeting">¡HOLA DE NUEVO! 👋</span>
               <br />
-              Soy <span className="highlight">Marvin</span>, un apasionado desarrollador con un fuerte enfoque en Python y análisis de datos. Actualmente cuento con una técnica en Desarrollo de Software y esto cursando un máster en Python y Power BI para expandir mis habilidades en el mundo del análisis y visualización de datos.
+              Soy <span className="highlight">Marvin</span>, un apasionado desarrollador con un fuerte enfoque en Python y análisis de datos. Actualmente cuento con una técnica en Desarrollo de Software y estoy cursando un máster en Python y Power BI para expandir mis habilidades en el mundo del análisis y visualización de datos.
             </p>
             <p className="about-description">
               Mi objetivo es combinar mis conocimientos en programación con el análisis de datos para crear soluciones innovadoras y significativas. Me encanta aprender nuevas tecnologías y enfrentarme a desafíos que me ayuden a crecer profesionalmente.
